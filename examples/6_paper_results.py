@@ -78,7 +78,7 @@ class PegasusApp:
             attributes={
                 "inputs:intensity": 5e3,
                 "inputs:color": (1.0, 1.0, 1.0),
-                "inputs:texture:file": "omniverse://localhost/NVIDIA/Assets/Skies/Indoor/ZetoCGcom_ExhibitionHall_Interior1.hdr"
+                "inputs:texture:file": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.5/NVIDIA/Assets/Skies/Indoor/ZetoCGcom_ExhibitionHall_Interior1.hdr"
             }
         )
 

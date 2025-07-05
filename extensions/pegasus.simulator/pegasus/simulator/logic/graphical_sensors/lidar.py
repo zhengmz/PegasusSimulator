@@ -12,8 +12,7 @@ from pegasus.simulator.logic.interface.pegasus_interface import PegasusInterface
 
 # Imports the python bindings to interact with lidar sensor
 import omni.kit.commands
-from pxr import Gf, UsdGeom
-from omni.isaac.range_sensor import _range_sensor      
+from pxr import Gf, UsdGeom  
 from omni.usd import get_stage_next_free_path
 
 # Auxiliary scipy and numpy modules
@@ -46,9 +45,6 @@ class Lidar(GraphicalSensor):
         self._orientation = Rotation.from_euler("ZYX", config.get("orientation", np.array([0.0, 0.0, 0.0])), degrees=True).as_quat()
         self._sensor_configuration = config.get("sensor_configuration", "Velodyne_VLS128")
         self._show_render = config.get("show_render", False)
-        
-        # Create the lidar interface
-        self.lidarInterface = _range_sensor.acquire_lidar_sensor_interface() # Used to interact with the LIDAR
 
     def initialize(self, vehicle):
         """
