@@ -19,7 +19,7 @@ Installing NVIDIA Isaac Sim
 .. note::
 	We have tested Pegasus Simulator with Isaac Sim 4.5.0 release on Ubuntu 22.04LTS with NVIDIA driver 550.163.01. The PX4-Autopilot used during development was v.14.3. Older versions Ubuntu and PX4-Autopilot were not tested. This extension was not tested on Windows. 
 
-In order to install Isaac Sim on linux, download the zip file containing the `Workstation Installation here <https://download.isaacsim.omniverse.nvidia.com/isaac-sim-standalone%404.5.0-rc.36%2Brelease.19112.f59b3005.gl.linux-x86_64.release.zip>`__ or run the following line on the terminal:
+In order to install Isaac Sim on linux, download the zip file containing the `Workstation Installation here <https://download.isaacsim.omniverse.nvidia.com/isaac-sim-standalone%404.5.0-rc.36%2Brelease.19112.f59b3005.gl.linux-x86_64.release.zip>`__ or run the following lines on the terminal:
 
 .. code:: bash
 
@@ -44,7 +44,7 @@ In order to install Isaac Sim on linux, download the zip file containing the `Wo
     rm isaac-sim-standalone%404.5.0-rc.36%2Brelease.19112.f59b3005.gl.linux-x86_64.release.zip
 
 
-The short video with the installation guide for Pegasus Simulator is also available `here <https://youtu.be/YCp5E8nazag>`__, but the Isaac Sim install method presented is no longer available. You should follow the instructions above to install Isaac Sim 4.5.0.
+The short video with the installation guide for Pegasus Simulator is also available `here <https://youtu.be/YCp5E8nazag>`__, but the Isaac Sim install method presented is no longer available. You should follow the instructions above to install Isaac Sim 4.5.0. **See video from 1:25 min onwards for the installation of Pegasus Simulator.**
 
     ..  youtube:: YCp5E8nazag
         :width: 100%
@@ -61,12 +61,10 @@ from python scripts. As such, we recommend setting up a few custom environment v
 
 .. note::
     Although it is possible to setup a virtual environment following the 
-    instructions `here <https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_python.html>`__, this
+    instructions `here <https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/install_python.html>`__, this
     feature was not tested.
 
-Start by locating the `Isaac Sim installation <https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_python.html>`__ 
-by navigating to Isaac Sim's root folder. Typically, in Linux, this folder can be found under ``${HOME}/.local/share/ov/pkg/isaac_sim-*``,
-where the ``*`` is the version number.
+Start by locating the **Isaac Sim installation** by navigating to Isaac Sim's root folder. Typically, in Linux, this folder can be found under ``${HOME}/isaac_sim``.
 
 Add the following lines to your ``~/.bashrc`` or ``~/.zshrc`` file.
 
