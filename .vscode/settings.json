@@ -204,8 +204,6 @@
         "${workspaceFolder}/app/extscache/omni.kit.mesh.raycast-104.3.1+104.1.lx64.r.cp37",
         "${workspaceFolder}/app/extscache/omni.paint.brush.select-104.3.2+104.1",
         "${workspaceFolder}/app/extscache/omni.usd.schema.destruction-0.4.0+104.1.lx64.r.cp37",
-        "${workspaceFolder}/app/extscache/omni.timeline-1.0.10+10a4b5c0.lx64.r.cp310",
-        "${workspaceFolder}/app/extscache/omni.usd-1.12.2+10a4b5c0.lx64.r.cp310",
         "${workspaceFolder}/app/exts/omni.isaac.mjcf",
         "${workspaceFolder}/app/exts/omni.isaac.tests",
         "${workspaceFolder}/app/exts/omni.drivesim.sensors.nv.radar",
