@@ -138,10 +138,14 @@ class PegasusApp:
         # Try to spawn the selected robot in the world to the specified namespace
         config_multirotor = MultirotorConfig()
         # # Create the multirotor configuration
+        # Get PX4 directory from environment variable or use default path
+        import os
+        px4_dir = os.getenv("PX4_DIR", os.path.expanduser("~/PX4-Autopilot"))
+
         mavlink_config = PX4MavlinkBackendConfig({
             "vehicle_id": 0,
             "px4_autolaunch": True,
-            "px4_dir": "/home/marcelo/PX4-Autopilot"
+            "px4_dir": px4_dir
         })
         config_multirotor.backends = [
             PX4MavlinkBackend(mavlink_config),
